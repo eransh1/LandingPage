@@ -1,0 +1,55 @@
+.navbar{
+    display: flex;
+    font-family: 'Poppins';
+}
+.navbarFirstHalf{
+    display: flex;
+}
+.brandLogo{
+    display: flex;
+}
+.logo{
+    margin: auto;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.linksCont{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+.links{
+    font-weight: 500;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+.btnCont{
+    display: flex;
+    margin-right: 1rem;
+}
+.button{
+    background: #272525;
+    margin: auto;
+    display: flex;
+    padding: .5rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.appleLogo{
+    width: 30px;
+    height: 30px;
+    margin-top: .25rem;
+    margin-right: .25rem;
+}
+@media(max-width:780px){
+    .navbar{
+        flex-direction: column;
+    }
+    .linksCont{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}

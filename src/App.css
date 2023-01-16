@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+#landingPage{
+    max-width: 100vw;
+    min-height: 100vh;
+    background: #dadada;
+    display: flex;
+    font-family: 'Poppins';
+    padding: 1rem;
+}
+.landingpage{
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    margin: auto;
+    border-radius: 11px;
+    padding: 1rem;
+    
+}
+.landingPage_infoCont{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+}
+.infoCont_topHead{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+.landingPage_infoCont_heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    
+    background: linear-gradient(270deg, #A6103D 44.79%, rgba(100, 23, 147, 0.927698) 53.8%, rgba(20, 34, 166, 0.837735) 65.01%, rgba(17, 43, 135, 0.707051) 81.3%, rgba(16, 168, 122, 0.664182) 86.64%, rgba(26, 202, 97, 0.60314) 94.25%, rgba(11, 145, 32, 0.558607) 99.8%, rgba(92, 165, 19, 0.508954) 105.98%, rgba(160, 155, 19, 0.333319) 127.87%, rgba(201, 86, 21, 0.172344) 147.93%, rgba(200, 12, 12, 0) 169.41%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;}
+
+    .infoCont_subtext{
+        color: #8d8d8d;
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+    .infoCont_notifyCont{
+        width: 100%;
+        display: flex;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .bigCont{
+        width: 50%;
+        margin: auto;
+        position: relative;
+        display: flex;
+    }
+.infoCont_input{
+    padding: 1rem;
+    background-color: #373636;
+    border: none;
+    width: 60%;
+    margin: auto;
+    color: #8d8d8d;
+    font-size: 1rem;
+    position: relative;
+}
+.infoCont_input_btn{
+    padding: .5rem;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+}
+.infoCont_notifyText{
+    color: #8d8d8d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media(max-width:1010px){
+.bigCont{
+    width: 95%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.infoCont_input_btn{
+    margin-right: 1.5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media(max-width:705px){
+    .landingPage_infoCont_heading{
+        line-height: 76px;
+    }
+    .infoCont_input_btn{
+        margin-right: .5rem;
+    }
 }
